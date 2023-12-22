@@ -1,0 +1,59 @@
+*{
+    
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #f9fafc;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #FFFFFF ;
+}
+
+.navbar__brand {
+    width: 100px;
+}
+
+.navbar__logo {
+    width: 100%;
+}
+
+.navbar__item {
+    background-image: linear-gradient(
+        to right,
+        #000 0%,
+        #000 51%,
+        #000 100%
+    );
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.navbar__item:hover{
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .navbar{
+        justify-content: space-between;
+        padding: 10px 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navbar__brand{
+        width: 150px;
+    }
+    .navbar__item{
+        padding: 20px;
+    }
+    
+}
